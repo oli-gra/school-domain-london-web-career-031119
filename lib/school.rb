@@ -12,6 +12,10 @@ class School
   def grade(search)
     @roster.select {|grade,students| search == grade}.values.flatten
   end
+  
+  def sort
+    
+  end
 
   
   def add_student(name,grade)
