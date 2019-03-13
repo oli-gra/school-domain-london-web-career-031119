@@ -17,14 +17,14 @@ class School
   def sort
     new_hash = {}
     counter = 0
-    binding.pry
+    # binding.pry
     @roster.sort_by do |grade, students|
         grade
     end
     while counter < @roster.max_by{|grade,students| grade}
       counter += 1 
       new_hash = @roster.find {}
-    binding.pry
+    # binding.pry
     puts"yeh"
   end
   
