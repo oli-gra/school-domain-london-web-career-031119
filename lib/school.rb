@@ -1,4 +1,5 @@
 # code here!
+require'pry'
 
 class School
   
@@ -14,7 +15,8 @@ class School
   end
   
   def sort
-    
+    binding.pry
+    puts"yeh"
   end
 
   
