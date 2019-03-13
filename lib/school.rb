@@ -16,8 +16,14 @@ class School
   
   def sort
     new_hash = {}
-    counter += 1 
-    new_hash = @roster.min_by{|grade,students| grade}
+    counter = 0
+    binding.pry
+    @roster.sort_by do |grade, students|
+        grade
+    end
+    while counter < @roster.max_by{|grade,students| grade}
+      counter += 1 
+      new_hash = @roster.find {}
     binding.pry
     puts"yeh"
   end
