@@ -20,7 +20,6 @@ class School
     binding.pry
     puts"yeh"
   end
-
   
   def add_student(name,grade)
     @name = name
