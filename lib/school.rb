@@ -16,6 +16,7 @@ class School
   
   def sort
     new_hash = {}
+    counter += 1 
     new_hash = @roster.min_by{|grade,students| grade}
     binding.pry
     puts"yeh"
