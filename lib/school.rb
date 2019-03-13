@@ -17,7 +17,7 @@ class School
   def sort
     new_hash = {}
     counter = 0
-    # binding.pry
+    binding.pry
     @roster.sort_by do |grade, students|
         grade
     end
