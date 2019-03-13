@@ -15,19 +15,9 @@ class School
   end
   
   def sort
-    new_hash = {}
-    counter = 0
-    # binding.pry
-    @roster.sort_by do |grade, students|
-        grade
-    end
-    while counter < @roster.max_by{|grade,students| grade}
-      counter += 1 
-      new_hash = @roster.find {}
-    end
-    # binding.pry
-    puts"yeh"
-  end
+
+    @roster.sort_by {|grade, students| grade}
+   end
   
   def add_student(name,grade)
     @name = name
