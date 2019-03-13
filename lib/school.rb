@@ -2,10 +2,15 @@
 
 class School
   
-  attr_accessor :student, :grade, :roster
+  attr_accessor :student, :roster
+  attr_writer :grade
   
   def initialize(name)
     @roster = {}
+  end
+  
+  def grade(search)
+    @roster.select {|grade,students| search == grade}
   end
 
   
