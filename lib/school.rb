@@ -24,6 +24,7 @@ class School
     while counter < @roster.max_by{|grade,students| grade}
       counter += 1 
       new_hash = @roster.find {}
+    end
     # binding.pry
     puts"yeh"
   end
