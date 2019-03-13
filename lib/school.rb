@@ -10,7 +10,7 @@ class School
   end
   
   def grade(search)
-    @roster.select {|grade,students| search == grade}.values
+    @roster.select {|grade,students| search == grade}.values.flatten
   end
 
   
